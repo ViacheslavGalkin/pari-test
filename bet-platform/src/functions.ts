@@ -1,6 +1,5 @@
 export function compareDeadline(deadline: bigint) {
   const currentTimestamp = BigInt(Math.floor(Date.now() / 1000));
-  console.log('deadline', deadline, 'currentTimestamp', currentTimestamp);
   return deadline > currentTimestamp;
 }
 

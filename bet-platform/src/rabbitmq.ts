@@ -32,7 +32,7 @@ export const connectRabbitMQ = async () => {
     }
   });
 
-  console.log('Подписка на очередь event_updates начата');
+  console.log(`Подписка на очередь ${QUEUE_NAME} начата`);
 };
 
 export async function receiveEventStatusUpdates(event: {

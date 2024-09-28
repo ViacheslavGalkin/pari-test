@@ -4,7 +4,6 @@ import { createBet, getBets, getEvents } from './bet-service';
 export async function betRoutes(fastify: FastifyInstance) {
   fastify.get('/events', async (request, reply) => {
     const events = await getEvents(true);
-	console.log(events);
     if (Array.isArray(events)) {
       return events;
     } else {
