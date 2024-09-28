@@ -1,0 +1,5 @@
+PROVIDER_PORT=3000
+PLATFORM_PORT=3001
+PROVIDER_URL=http://localhost:
+
+DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
